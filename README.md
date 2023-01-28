@@ -1,3 +1,3 @@
 # Lifeweb
-Learning programming in lifeweb (:
+Learning HTML and CSS in lifeweb (:
 
