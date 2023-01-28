@@ -1,0 +1,59 @@
+html{
+
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(84, 158, 204, 0.59);
+}
+
+.fullPage{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.btnContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+}
+
+.container{
+    margin: 15px;
+    flex: 9;
+    border: solid black;
+    background-color: rgb(169, 185, 185);
+}
+
+.addNC{
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: large;
+    background-color:  rgb(85, 189, 237);
+}
+
+
+table{
+    width: 100%;
+    direction: rtl;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th{
+    border-bottom: solid black;
+}
+
+tr:nth-child(even){
+    background-color: rgb(109, 177, 177);
+}
+
