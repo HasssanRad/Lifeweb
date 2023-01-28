@@ -56,7 +56,7 @@ h1{
 
 input[type=text], input[type=password]{
     padding: 10px;
-    width: 90%;
+    flex: 8;
     margin: 5px;
     padding: 0;
 }
@@ -79,7 +79,7 @@ input[type=text], input[type=password]{
     display: flex;
     justify-content: center;
     align-self: center;
-    width: 10%;
+    flex: 1;
     color: #282621;
 }
 
