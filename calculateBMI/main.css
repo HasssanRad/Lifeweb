@@ -1,0 +1,79 @@
+body, html{
+    margin: 0;
+    height: 100%;
+}
+body{
+    background-color: #db143d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 350px;
+    background-color: white;
+    border: solid green;
+    border-radius: 20px;
+}
+
+
+.form{
+    width: 300px;
+    height: 450px;
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+    
+}
+
+h1{
+    font-size: 40px;
+    direction: rtl;
+    text-align: center;
+    border-bottom: 2px solid #e8e8e6;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+.height, .weight{
+    direction: rtl;
+    display: flex;
+    flex-flow: wrap column;
+    margin: 10px 5px;
+    width: 100%;
+}
+
+#heightLbl, #weightLbl{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+#height, #weight{
+    display: flex;
+    align-self: center;
+    width: 100%;
+    border-radius: 30px;
+    padding: 10px 5px;
+    border: 2px solid #e8e8e6;
+}
+
+#btn{
+    padding: 0;
+    border-radius: 30px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    color: white;
+    background-color: #178653;;
+    margin: 15px 5px;
+}
+
+#showBMI{
+    font-size: 30px;
+    margin: 10px;
+    font-weight: bold;
+}

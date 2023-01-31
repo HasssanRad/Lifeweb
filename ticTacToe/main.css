@@ -1,0 +1,51 @@
+html{
+    margin: 0;
+    height: 100%;
+}
+
+
+body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.gameBoard{
+    width: 600px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+}
+
+.gameBoard > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150px;
+    color: white;
+}
+
+.left{
+    border-right: 10px solid white;
+}
+
+.right{
+    border-left: 10px solid white;
+}
+
+.top{
+    border-bottom: 10px solid white;
+}
+
+.bottom{
+    border-top: 10px solid white;
+}
+
+.x{
+    font-size: 150px;
+}
