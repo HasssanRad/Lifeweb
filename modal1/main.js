@@ -13,5 +13,5 @@ btn.onclick = function() {
 
 
 x.onclick = function() {
-    modalContainer.style.display = 'none';
+    modalContainer.setAttribute("aria-hidden","true");
 }
