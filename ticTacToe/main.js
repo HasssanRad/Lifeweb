@@ -14,7 +14,6 @@ function move(element){
     let bl = document.getElementById('bl');
     let b = document.getElementById('b');
     let br = document.getElementById('br');
-    let text = document.getElementById('show')
     let gb = document.getElementById('gameBoard')
     
     if (xo == 0) {
@@ -43,7 +42,7 @@ function move(element){
                 bl.innerHTML = "";
                 b.innerHTML = "";
                 br.innerHTML = "";
-                text.innerHTMl = "No winner !";
+                alert("No winner !");
                 break
             }
             s += 1
@@ -53,7 +52,7 @@ function move(element){
     if (tl.innerHTML === 'X'){
         if (t.innerHTML == 'X'){
             if (tr.innerHTML == 'X') {
-                text.innerHTMl = "Player 2 won ";
+                alert("Player 2 won ");
                 
                 xo.innerHTML = "";
                 tl.innerHTML = "";
@@ -71,7 +70,7 @@ function move(element){
     if (ml.innerHTML === 'X'){
         if (m.innerHTML == 'X'){
             if (mr.innerHTML == 'X') {
-                text.innerHTMl = "Player 2 won ";
+                alert("Player 2 won ");
                 xo.innerHTML = "";
                 tl.innerHTML = "";
                 t.innerHTML = "";
@@ -87,7 +86,7 @@ function move(element){
     if (bl.innerHTML === 'X'){
         if (b.innerHTML == 'X'){
             if (br.innerHTML == 'X') {
-                text.innerHTMl = "Player 2 won ";
+                alert("Player 2 won ");
                 xo.innerHTML = "";
                 tl.innerHTML = "";
                 t.innerHTML = "";
@@ -103,7 +102,7 @@ function move(element){
     if (tl.innerHTML === 'X'){
         if (ml.innerHTML == 'X'){
             if (bl.innerHTML == 'X') {
-                text.innerHTMl = "Player 2 won ";
+                alert("Player 2 won ");
                 xo.innerHTML = "";
                 tl.innerHTML = "";
                 t.innerHTML = "";
@@ -119,7 +118,7 @@ function move(element){
     if (tr.innerHTML === 'X'){
         if (mr.innerHTML == 'X'){
             if (br.innerHTML == 'X') {
-                text.innerHTMl = "Player 2 won ";
+                alert("Player 2 won ");
                 xo.innerHTML = "";
                 tl.innerHTML = "";
                 t.innerHTML = "";
@@ -135,7 +134,7 @@ function move(element){
     if (t.innerHTML === 'X'){
         if (m.innerHTML == 'X'){
             if (b.innerHTML == 'X') {
-                text.innerHTMl = "Player 2 won";
+                alert("Player 2 won");
                 xo.innerHTML = "";
                 tl.innerHTML = "";
                 t.innerHTML = "";
@@ -151,7 +150,7 @@ function move(element){
     if (tl.innerHTML === 'X'){
         if (m.innerHTML == 'X'){
             if (br.innerHTML == 'X') {
-                text.innerHTMl = "Player 2 won ";
+                alert("Player 2 won ");
                 xo.innerHTML = "";
                 tl.innerHTML = "";
                 t.innerHTML = "";
@@ -167,7 +166,7 @@ function move(element){
     if (tr.innerHTML === 'X'){
         if (m.innerHTML == 'X'){
             if (bl.innerHTML == 'X') {
-                text.innerHTMl = "Player 2 won ";
+                alert("Player 2 won ");
                 xo.innerHTML = "";
                 tl.innerHTML = "";
                 t.innerHTML = "";
@@ -186,7 +185,7 @@ function move(element){
     if (tl.innerHTML === 'O'){
         if (t.innerHTML == 'O'){
             if (tr.innerHTML == 'O') {
-                text.innerHTMl = "Player 1 won ";
+                alert("Player 1 won ");
                 xo.innerHTML = "";
                 tl.innerHTML = "";
                 t.innerHTML = "";
@@ -202,7 +201,7 @@ function move(element){
     if (ml.innerHTML === 'O'){
         if (m.innerHTML == 'O'){
             if (mr.innerHTML == 'O') {
-                text.innerHTMl = "Player 1 won ";
+                alert("Player 1 won ");
                 xo.innerHTML = "";
                 tl.innerHTML = "";
                 t.innerHTML = "";
@@ -219,7 +218,7 @@ function move(element){
     if (bl.innerHTML === 'O'){
         if (b.innerHTML == 'O'){
             if (br.innerHTML == 'O') {
-                text.innerHTMl = "Player 1 won ";
+                alert("Player 1 won ");
                 xo.innerHTML = "";
                 tl.innerHTML = "";
                 t.innerHTML = "";
@@ -235,7 +234,7 @@ function move(element){
     if (tl.innerHTML === 'O'){
         if (ml.innerHTML == 'O'){
             if (bl.innerHTML == 'O') {
-                text.innerHTMl = "Player 1 won ";
+                alert("Player 1 won ");
                 xo.innerHTML = "";
                 tl.innerHTML = "";
                 t.innerHTML = "";
@@ -251,7 +250,7 @@ function move(element){
     if (tr.innerHTML === 'O'){
         if (mr.innerHTML == 'O'){
             if (br.innerHTML == 'O') {
-                text.innerHTMl = "Player 1 won ";
+                alert("Player 1 won ");
                 xo.innerHTML = "";
                 tl.innerHTML = "";
                 t.innerHTML = "";
@@ -267,7 +266,7 @@ function move(element){
     if (t.innerHTML === 'O'){
         if (m.innerHTML == 'O'){
             if (b.innerHTML == 'O') {
-                text.innerHTMl = "Player 1 won ";
+                alert("Player 1 won ");
                 xo.innerHTML = "";
                 tl.innerHTML = "";
                 t.innerHTML = "";
@@ -283,7 +282,7 @@ function move(element){
     if (tl.innerHTML === 'O'){
         if (m.innerHTML == 'O'){
             if (br.innerHTML == 'O') {
-                text.innerHTMl = "Player 1 won ";
+                alert("Player 1 won ");
                 xo.innerHTML = "";
                 tl.innerHTML = "";
                 t.innerHTML = "";
@@ -299,7 +298,7 @@ function move(element){
     if (tr.innerHTML === 'O'){
         if (m.innerHTML == 'O'){
             if (bl.innerHTML == 'O') {
-                text.innerHTMl = "Player 1 won ";
+                alert("Player 1 won ");
                 xo.innerHTML = "";
                 tl.innerHTML = "";
                 t.innerHTML = "";
@@ -315,7 +314,7 @@ function move(element){
 
 let person = 0;
 
-    // document.getElementById(element.id).addEventListener('click', move(element))
+
 
     
 
