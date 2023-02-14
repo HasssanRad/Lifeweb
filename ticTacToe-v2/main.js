@@ -11,51 +11,86 @@ list = Array(9).fill(0);
 
 
 function move(element){
+    let flag = true
     
-    if (!(list.includes(0))){
-        countDraw += 1
-        document.querySelector('body').addEventListener("click",createCells);
-    }
-     
     if (list[0] === list[1] && list[0] === list[2] && list[0] !== 0){
-            document.querySelector('body').addEventListener("click",createCells);
-            if (list[0] == 'X'){
-                console.log(list[0]);
-            }else{
-
-                console.log(list[0]);
-            }
-            
+        document.querySelector('body').addEventListener("click",createCells);
+        flag = false
+        if (list[0] == 'X'){
+            countX += 1
+        }else if (list[0] == 'O'){
+            countO += 1
+        }
+        
     }
     else if (list[0] === list[3] && list[0] === list[6] && list[0] !== 0){
         document.querySelector('body').addEventListener("click",createCells);
-        console.log('l2');
+        flag = false
+        if (list[0] == 'X'){
+            countX += 1
+        }else if (list[0] == 'O'){
+            countO += 1
+            }
     }
     else if (list[0] === list[4] && list[0] === list[8] && list[0] !== 0){
         document.querySelector('body').addEventListener("click",createCells);
-        console.log('l3');
+        flag = false
+        if (list[0] == 'X'){
+                countX += 1
+            }else if (list[0] == 'O'){
+                countO += 1
+            }
     }
     else if (list[1] === list[4] && list[1] === list[7] && list[1] !== 0){
         document.querySelector('body').addEventListener("click",createCells);
-        console.log('l4');
+        flag = false
+        if (list[1] == 'X'){
+            countX += 1
+        }else if (list[1] == 'O'){
+            countO += 1
+        }
     }
     else if (list[2] === list[5] && list[2] === list[8] && list[2] !== 0){
         document.querySelector('body').addEventListener("click",createCells);
-        console.log('l5');
+        flag = false
+        if (list[2] == 'X'){
+            countX += 1
+        }else if (list[2] == 'O'){
+            countO += 1
+        }
     }
     else if (list[2] === list[4] && list[2] === list[6] && list[2] !== 0){
         document.querySelector('body').addEventListener("click",createCells);
-        console.log('l6');
+        flag = false
+        if (list[2] == 'X'){
+            countX += 1
+            }else if (list[2] == 'O'){
+                countO += 1
+            }
     }
     else if (list[3] === list[4] && list[3] === list[5] && list[3] !== 0){
         document.querySelector('body').addEventListener("click",createCells);
-        console.log('l7');
+        flag = false
+        if (list[3] == 'X'){
+            countX += 1
+        }else if (list[3] == 'O'){
+            countO += 1
+        }
     }
     else if (list[6] === list[7] && list[6] === list[8] && list[6] !== 0){
         document.querySelector('body').addEventListener("click",createCells);
-        console.log('l8');
+        flag = false
+        if (list[6] == 'X'){
+            countX += 1
+        }else if (list[6] == 'O'){
+            countO += 1
+        }
     }
     
+    if (!(list.includes(0)) && flag){
+        countDraw += 1
+        document.querySelector('body').addEventListener("click",createCells);
+    }
 
     let xo = person%2 ;
     let id = element.target.id;
@@ -125,10 +160,8 @@ function move(element){
     document.getElementById('x').innerHTML = `X: ${countX}`;
     document.getElementById('o').innerHTML = `O: ${countO}`;
     document.getElementById('draw').innerHTML = `draw: ${countDraw}`;
-
-    // localStorage.setItem('countX', 'countX');
-    // localStorage.setItem('countO', 'countO');
-    // localStorage.setItem('countDraw', 'countDraw');
+    
+    
 }
 
 
